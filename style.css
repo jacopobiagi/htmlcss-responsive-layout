@@ -67,6 +67,10 @@
     background-color: rgb(151, 146, 228);
 }
 
+.color-white{
+    color: white;
+}
+
 /* CLASSI PAGINA */
 
 
@@ -78,7 +82,6 @@ header{
 }
 
 .nav{
-    color: white;
     text-decoration: none;
 }
 
@@ -114,7 +117,6 @@ main{
 }
 
 .apple{
-    color: white;
     font-size: 1em!important;
     margin-right: 5px;
     font-weight: bold;
@@ -142,9 +144,8 @@ main{
 }
 
 .quality-section img{
-    width: 80%;
-    height: 100%;
-    
+    height: 80%;
+    margin-top: 70px;
 }
 
 .quality-section i,h4,p{
@@ -183,7 +184,7 @@ main{
 .div-planning1-paragraph{
     padding: 25px 0;
     height: 40%;
-    color: white;
+    color: white
 }
 
 .div-planning2{
@@ -232,7 +233,7 @@ main{
     display: block;
     margin: 0 auto; 
     padding: 20px;
-    width: 80%;
+    width: 190px;
 }
 
 .content-image{
@@ -240,7 +241,6 @@ main{
 }
 
 .comment-testimonial{
-    color: white;
     padding: 30px;
 }
 
@@ -273,7 +273,6 @@ main{
     width: 40%;
     height: 40px;
     border-radius: 30px;
-    color: white;
 }
 
 .about-paragraph{
@@ -321,7 +320,6 @@ main{
 
 .start-it *{
     text-align: center;
-    color: white;
 }
 
 .start-it h3{
@@ -353,5 +351,90 @@ footer{
 .last-div{
     width: 30%;
     margin: 0 auto;
-    color: white;
+}
+
+
+/* CSS RESPONSIVE */
+
+.d-none{
+    display: none;
+}
+
+@media all and (max-width:1280px){
+    .width-70-auto{
+        width: 95%;
+    }
+}
+
+@media all and (max-width: 950px) {
+    .search > div{
+        display: none;
+    }
+    .d-none{
+        display: flex!important;
+        width: 100%;
+        height: 100%;
+        font-size: 1.5em;
+        justify-content: end;
+        align-items: center;
+    }
+    .search{
+        justify-content: end;
+    }
+}
+
+@media all and (max-width: 885px) {
+    .col-demo{
+        flex-direction: column;
+    }
+
+    .col-demo:first-child{
+        width: 100%;
+    }
+
+    .col-demo > div{
+        height: 50%;
+    }
+
+    .col-demo img{
+        margin-top: 55px;
+    }
+
+    .block-demo{
+        height: 1100px!important;
+    }
+
+    .planning-block{
+        height: unset!important;
+    }
+
+    .planning-block > div{
+        flex-direction: column;
+    }
+
+    .planning-block > div > div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .div-planning1-img {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .testimonial-comment{
+        height: unset;
+    }
+
+    .benefits .col-3{
+        width: 40%;
+    }
+
+    .quality-section{
+        
+    }
 }
